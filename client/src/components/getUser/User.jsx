@@ -11,7 +11,7 @@ const User = () => {
   useEffect(()=>{
 
     const fetchData = async()=>{
-        const response = await axios.get("http://localhost:8000/api/getall");
+        const response = await axios.get("/api/getall");
         setUsers(response.data);
     }
 
